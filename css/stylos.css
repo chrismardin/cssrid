@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e0e0;
+    padding: 20px;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    height: 80vh;
+}
+
+
+article {
+    background-color: rgb(132, 84, 132);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.art1 {
+    background-color: #733fc8;
+    grid-column: 1 / 3;
+}
+
+.art2 {
+    grid-column: 3 / 4;
+    background-color: #49556b;
+}
+
+.art3 {
+
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+.art4 {
+    grid-column: 1 / 2;
+    background-color: white;
+}
+
+.art5 {
+    grid-column: 2 / 4;
+    background-color: #18202d;
+}
+
+
+article>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+h2 {
+    font-size: 13px;
+    text-align: justify;
+    color: white;
+
+}
+
+h3 {
+    font-size: 11px;
+    text-align: justify;
+    color: #ffffff9d;
+}
+
+
+.p1 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+    color: white;
+
+
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+
+.p2 {
+    font-size: 13px;
+    text-align: justify;
+    color: #ffffff9d;
+
+    line-height: 1.4;
+
+
+}
+
+
+
+
+
+.art3 div span>h2 {
+    color: #2c323c;
+
+}
+
+
+.art3 div span>h3 {
+    color: #49556b;
+
+}
+
+.art3 .p2 {
+    color: #49556b;
+
+
+}
+
+.art3 .p1 {
+    color: #2c323c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.art4 div span>h2 {
+    color: #2c323c;
+
+}
+
+
+.art4 div span>h3 {
+    color: #49556b;
+
+}
+
+.art4 .p2 {
+    color: #49556b;
+
+
+}
+
+.art4 .p1 {
+    color: #2c323c;
+
+
+}
+
+
+
+
+@media screen and (max-width: 678px){
+   
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    height: 100vh;
+
+}
+
+.art1 {
+
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+
+.art2 {
+    grid-column: 1 /5;
+    grid-row: 2;
+}
+
+.art3 {
+
+    grid-column: 1 / 5;
+    grid-row: 3;
+ 
+
+}
+
+
+
+
+
+
+
+.art4 {
+    grid-column: 1 / 5;
+    grid-row: 4;
+
+}
+
+.art5 {
+    grid-column: 1 / 5;
+    grid-row: 5;
+
+}
+}
+
+
+
+
